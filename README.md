@@ -288,9 +288,6 @@ git branch -M main
 git remote add origin https://github.com/yourusername/your-repo-name.git
 git push -u origin main
 ```
-
-> 🖼️ *Screenshot Placeholder: `assets/screenshots/02-upload-code.png`*
-
 ---
 
 ### 📍 Step 3 — Launch AWS EC2
@@ -305,8 +302,6 @@ Launch a new EC2 instance with the following configuration:
 | **Key Pair** | Create/download a new `.pem` key |
 | **Security Group Inbound Rules** | Port `22` (SSH), `80` (HTTP), `443` (HTTPS) |
 
-> 🖼️ *Screenshot Placeholder: `assets/screenshots/03-launch-ec2.png`*
-
 ---
 
 ### 📍 Step 4 — Connect via SSH
@@ -317,9 +312,6 @@ Connect to your EC2 instance from your local terminal:
 chmod 400 website-key.pem
 ssh -i website-key.pem ubuntu@YOUR_PUBLIC_IP
 ```
-
-> 🖼️ *Screenshot Placeholder: `assets/screenshots/04-ssh-connect.png`*
-
 ---
 
 ### 📍 Step 5 — Configure GitHub Secrets
@@ -332,8 +324,6 @@ Navigate to **Settings → Secrets and variables → Actions** in your GitHub re
 | `HOST_DNS` | Public IP or DNS name of your EC2 instance |
 | `USERNAME` | SSH login username (typically `ubuntu`) |
 | `TARGET_DIR` | Destination directory on the server (e.g., `/var/www/html`) |
-
-> 🖼️ *Screenshot Placeholder: `assets/screenshots/05-github-secrets.png`*
 
 > ⚠️ **Never commit your `.pem` file or secrets to the repository.**
 
@@ -846,10 +836,10 @@ If this project helped you, please consider:
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/yourusername)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourusername)
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white)](https://yourportfolio.com)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:youremail@example.com)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/panchaldhairya16)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhairya-panchal-800845351/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=googlechrome&logoColor=white)](https://shellfolio-by-panchaldhairya.vercel.app/)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:panchaldhairya2005@gmail)
 
 </div>
 
